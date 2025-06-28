@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "types": ["node", "@wdio/globals/types", "mocha"]
+  },
+  "include": ["test/**/*.js", "pageObjects/**/*.js"]
+}
