@@ -62,7 +62,10 @@ exports.config = {
       "appium:deviceName": "Pixel_8",
       "appium:platformVersion": "16.0",
       "appium:automationName": "UiAutomator2",
-      "appium:app": "D:/Noka tests/noka.apk", // "appium:appActivity": ".experience.ExperienceActivity",
+      "appium:app": "D:/Noka tests/noka.apk",
+      // "appium:appPackage": "com.anonymous.noka.test",
+
+      // "appium:appActivity": ".experience.ExperienceActivity",
     },
   ],
   //
