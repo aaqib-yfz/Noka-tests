@@ -1,2 +1,5 @@
-node_modules
-"/noka.apk"
+# Ignore node modules
+node_modules/
+
+# Ignore APK file
+noka.apk
