@@ -1,8 +1,6 @@
 import { NavigationBar } from "../constants/selectors/navigationBar";
 import * as welcomePage from "../constants/selectors/welcomePage";
-import { Helper } from "../helper";
 const navigationBar = new NavigationBar();
-const helper = new Helper();
 
 export class AuthScreen {
   async signUp(name, email, password) {

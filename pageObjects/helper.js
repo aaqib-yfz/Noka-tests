@@ -37,7 +37,7 @@ export class Helper {
   }
 
   async tapAt(x, y) {
-    await driver.performActions([
+    driver.performActions([
       {
         type: "pointer",
         id: "finger1",
@@ -50,6 +50,6 @@ export class Helper {
         ],
       },
     ]);
-    await driver.releaseActions();
+    driver.releaseActions();
   }
 }
