@@ -50,7 +50,7 @@ class WelcomePage {
     return $('//android.widget.Button[@content-desc="Sign In"]');
   }
   get signOutbtn() {
-    return $('//android.view.ViewGroup[@content-desc=", Sign Out"]');
+    return $('//android.view.ViewGroup[@content-desc="Sign Out"]');
   }
 }
 module.exports = new WelcomePage();

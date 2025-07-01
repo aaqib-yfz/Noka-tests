@@ -39,4 +39,8 @@ describe("Pantry Items", () => {
     await pantryScreen.addItem("meat", "2", "kg", "Meat", "2", "Pantry");
     console.log("it block end");
   });
+  afterEach(async () => {
+    const authScreen = new AuthScreen();
+    await authScreen.signout();
+  });
 });

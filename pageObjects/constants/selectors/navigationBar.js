@@ -3,11 +3,11 @@ const helper = new Helper();
 
 export class NavigationBar {
   async visitHome() {
-    helper.tapAt(115, 2271);
+    await helper.tapAt(115, 2271);
   }
 
   async visitMyPantry() {
-    helper.tapAt(322, 2271);
+    await helper.tapAt(322, 2271);
   }
 
   async visitUsedItems() {
@@ -15,10 +15,10 @@ export class NavigationBar {
   }
 
   async visitWastedItems() {
-    helper.tapAt(756, 2271);
+    await helper.tapAt(756, 2271);
   }
 
   async visitSettings() {
-    helper.tapAt(972, 2255);
+    await helper.tapAt(972, 2255);
   }
 }
