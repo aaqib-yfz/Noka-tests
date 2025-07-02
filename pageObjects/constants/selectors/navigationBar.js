@@ -1,7 +1,7 @@
-const { Helper } = require("../../helper");
-const helper = new Helper();
+import { Helper } from "../../helper";
 
-export class NavigationBar {
+const helper = new Helper();
+class NavigationBar {
   async visitHome() {
     await helper.tapAt(115, 2271);
   }
@@ -22,3 +22,5 @@ export class NavigationBar {
     await helper.tapAt(972, 2255);
   }
 }
+
+export { NavigationBar };

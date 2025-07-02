@@ -1,4 +1,4 @@
-export class Helper {
+class Helper {
   getRandomEmail(length) {
     var result = "";
     var characters = "abcdefghijklmnopqrstuvwxyz";
@@ -53,3 +53,5 @@ export class Helper {
     await driver.releaseActions();
   }
 }
+
+export { Helper };

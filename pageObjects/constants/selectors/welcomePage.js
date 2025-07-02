@@ -53,4 +53,5 @@ class WelcomePage {
     return $('//android.view.ViewGroup[@content-desc="Sign Out"]');
   }
 }
-module.exports = new WelcomePage();
+
+export { WelcomePage };

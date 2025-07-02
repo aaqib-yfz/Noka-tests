@@ -1,6 +1,6 @@
-const { Helper } = require("../../pageObjects/helper");
-const { AuthScreen } = require("../../pageObjects/screens/authSceen");
-const { PantryScreen } = require("../../pageObjects/screens/pantryScreen");
+import { Helper } from "../../pageObjects/helper.js";
+import { AuthScreen } from "../../pageObjects/screens/authSceen.js";
+import { PantryScreen } from "../../pageObjects/screens/pantryScreen.js";
 /// <reference types="webdriverio/sync" />
 /// <reference types="@wdio/globals/types" />
 

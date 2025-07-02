@@ -1,36 +1,37 @@
 import { NavigationBar } from "../constants/selectors/navigationBar";
-import * as pantryScreen from "../constants/selectors/pantryScreen";
-const pantryScreenSelectors = require("../../pageObjects/constants/selectors/pantryScreen");
+import { PantryScreenSelectors } from "../constants/selectors/pantryScreen";
+
+const pantryScreenSelectors = new PantryScreenSelectors();
 const navigationBar = new NavigationBar();
 export class PantryScreen {
   async addItem(itemName, quantity, unit, category, date, storage) {
     await navigationBar.visitMyPantry();
     await expect(pantryScreenSelectors.addItemsBtn).toBeDisplayed();
-    await pantryScreen.addItemsBtn.click();
+    await pantryScreenSelectors.addItemsBtn.click();
 
-    const nameField = pantryScreen.itemNameField;
+    const nameField = pantryScreenSelectors.itemNameField;
     await nameField.setValue(itemName);
 
-    const itemQuantity = pantryScreen.quantity;
+    const itemQuantity = pantryScreenSelectors.quantity;
     await itemQuantity.setValue(quantity);
 
-    await pantryScreen.selectUnitDropDown.click();
-    const unitOption = pantryScreen.unitOption(unit);
+    await pantryScreenSelectors.selectUnitDropDown.click();
+    const unitOption = pantryScreenSelectors.unitOption(unit);
     await unitOption.click();
 
-    await pantryScreen.selectCategory.click();
-    const categoryOption = pantryScreen.categoryOption(category);
+    await pantryScreenSelectors.selectCategory.click();
+    const categoryOption = pantryScreenSelectors.categoryOption(category);
     await categoryOption.click();
 
-    await pantryScreen.dateDropDown.click();
-    const datePick = pantryScreen.datePick(date);
+    await pantryScreenSelectors.dateDropDown.click();
+    const datePick = pantryScreenSelectors.datePick(date);
     await datePick.click();
-    await pantryScreen.dateOkBtn.click();
+    await pantryScreenSelectors.dateOkBtn.click();
 
-    await pantryScreen.storageDropDown.click();
-    const storageOption = pantryScreen.storageOption(storage);
+    await pantryScreenSelectors.storageDropDown.click();
+    const storageOption = pantryScreenSelectors.storageOption(storage);
     await storageOption.click();
 
-    await pantryScreen.addItemBtn.click();
+    await pantryScreenSelectors.addItemBtn.click();
   }
 }

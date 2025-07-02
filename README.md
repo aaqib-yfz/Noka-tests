@@ -30,17 +30,20 @@ Before running the tests, ensure you have the following installed:
 ## 🚀 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd noka-tests
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Install Appium globally** (if not already installed)
+
    ```bash
    npm install -g appium
    ```
@@ -53,16 +56,18 @@ Before running the tests, ensure you have the following installed:
 ## 📱 Setup Android Environment
 
 1. **Set up Android SDK environment variables**
+
    ```bash
    export ANDROID_HOME=/path/to/android/sdk
    export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
    ```
 
 2. **Start Android Emulator** or connect physical device
+
    ```bash
    # For emulator
    emulator -avd Pixel_8
-   
+
    # Or connect physical device via USB with USB debugging enabled
    ```
 
@@ -74,16 +79,19 @@ Before running the tests, ensure you have the following installed:
 ## 🧪 Running Tests
 
 ### Start Appium Server
+
 ```bash
 appium
 ```
 
 ### Run Tests
+
 ```bash
 npx wdio run wdio.conf.js
 ```
 
 ### Run Specific Test File
+
 ```bash
 npx wdio run wdio.conf.js --spec test/specs/sample.test.js
 ```
@@ -127,7 +135,9 @@ class WelcomePage {
   }
 
   get fullNameField() {
-    return $('android=new UiSelector().resourceId("text-input-outlined").instance(0)');
+    return $(
+      'android=new UiSelector().resourceId("text-input-outlined").instance(0)'
+    );
   }
 }
 ```
@@ -164,11 +174,13 @@ Test results are displayed in the console using the Spec reporter. For more deta
 ### Common Issues
 
 1. **Device not detected**
+
    - Ensure USB debugging is enabled
    - Check `adb devices` output
    - Restart ADB server: `adb kill-server && adb start-server`
 
 2. **Appium connection issues**
+
    - Verify Appium server is running
    - Check port availability
    - Restart Appium server
@@ -181,6 +193,7 @@ Test results are displayed in the console using the Spec reporter. For more deta
 ### Debug Mode
 
 Run tests with debug logging:
+
 ```bash
 npx wdio run wdio.conf.js --logLevel debug
 ```
@@ -199,6 +212,7 @@ This project is licensed under the ISC License.
 ## 📞 Support
 
 For issues and questions:
+
 - Check the [WebdriverIO documentation](https://webdriver.io/docs/)
 - Review [Appium documentation](http://appium.io/docs/en/about-appium/intro/)
-- Check existing issues in the project repository 
+- Check existing issues in the project repository

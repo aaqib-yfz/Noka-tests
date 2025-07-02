@@ -49,4 +49,4 @@ class PantryScreenSelectors {
   }
 }
 
-module.exports = new PantryScreenSelectors();
+export { PantryScreenSelectors };
