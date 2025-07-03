@@ -45,13 +45,19 @@ class Helper {
         actions: [
           { type: "pointerMove", duration: 0, x, y },
           { type: "pointerDown", button: 0 },
-          { type: "pause", duration: 100 },
+          { type: "pause", duration: 0 },
           { type: "pointerUp", button: 0 },
         ],
       },
     ]);
     await driver.releaseActions();
   }
-}
 
+  // async tapAt(x, y) {
+  //   await browser.touchAction([
+  //     { action: "press", x: x, y: y },
+  //     { action: "release" },
+  //   ]);
+  // }
+}
 export { Helper };

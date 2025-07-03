@@ -49,8 +49,9 @@ class WelcomePage {
   get signIntBtn() {
     return $('//android.widget.Button[@content-desc="Sign In"]');
   }
+
   get signOutbtn() {
-    return $('//android.view.ViewGroup[@content-desc="Sign Out"]');
+    return $('android=new UiSelector().text("Sign Out")');
   }
 }
 

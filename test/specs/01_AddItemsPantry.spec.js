@@ -34,7 +34,6 @@ describe("Pantry Items", () => {
   it("Add Items in Pantry", async function () {
     this.timeout(20000);
     console.log("it block start");
-
     const pantryScreen = new PantryScreen();
     await pantryScreen.addItem("meat", "2", "kg", "Meat", "2", "Pantry");
     console.log("it block end");

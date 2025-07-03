@@ -11,7 +11,7 @@ class NavigationBar {
   }
 
   async visitUsedItems() {
-    helper.tapAt(522, 2271);
+    await helper.tapAt(522, 2271);
   }
 
   async visitWastedItems() {

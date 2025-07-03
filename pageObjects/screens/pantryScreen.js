@@ -5,6 +5,7 @@ const pantryScreenSelectors = new PantryScreenSelectors();
 const navigationBar = new NavigationBar();
 export class PantryScreen {
   async addItem(itemName, quantity, unit, category, date, storage) {
+    await driver.pause(1000); // or better: wait for element
     await navigationBar.visitMyPantry();
     await expect(pantryScreenSelectors.addItemsBtn).toBeDisplayed();
     await pantryScreenSelectors.addItemsBtn.click();
