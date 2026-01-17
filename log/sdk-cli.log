@@ -1,0 +1,29 @@
+2026-01-17T13:10:31.795Z CLI info [main]     Server listening on port: 5400
+2026-01-17T13:10:31.882Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","platforms":[{"platformName":"Android","appium:deviceName":"Google Pixel 8","appium:platformVersion":"14.0","appium:automationName":"UiAutomator2","appium:app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","projectName":"Noka App","buildName":"Android Appium Tests","sessionName":"Smoke Test - Launch App","debug":true,"networkLogs":true,"wdioService":"9.22.0"}],"isNonBstackA11yWDIO":false,"testObservability":false,"accessibility":null,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"sessionNameOmitTestTitle":false,"sessionNamePrependTopLevelSuiteTitle":false,"sessionNameFormat":""},"buildTag":[]}
+2026-01-17T13:10:31.906Z CLI info     Should start debug utility: undefined
+2026-01-17T13:10:31.912Z CLI info [testhub:module]  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  Starting testhub from 18240:0
+2026-01-17T13:10:31.916Z CLI info  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-01-17T13:10:31.921Z CLI info  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-01-17T13:10:33.345Z CLI info  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2026-01-17T13:10:33.348Z CLI info  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://hub-use.browserstack.com
+2026-01-17T13:10:33.351Z CLI info  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2026-01-17T13:10:33.439Z CLI info [testhub:module]  [aaqibshaheer_lx7fNZ]   [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  startBuild: response=lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr
+2026-01-17T13:10:33.444Z CLI info  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-17T13:10:34.352Z CLI info  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-17T13:10:35.191Z CLI error  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  error invoking callback for eventName: {}
+2026-01-17T13:10:35.191Z CLI error  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  Error: invalid percyToken=null
+    at C:\snapshot\browserstack-binary\cli\dist\index.js
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-17T13:10:35.192Z CLI info [appautomate:service]  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  Using app: bs://7859e32f122f8995208d85636e4188dfb5d07605
+2026-01-17T13:10:41.736Z CLI info [sdk:service]  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  Driver initialized as primary driver: platformIndex=0
+2026-01-17T13:11:31.517Z CLI info  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2026-01-17T13:11:31.528Z CLI info  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2026-01-17T13:11:32.466Z CLI error [testhub:module]  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  stopBuild: request={"finished_at":"2026-01-17T13:11:31.519Z","finished_metadata":[],"custom_metadata":null} error=HTTPError: Response code 401 (Unauthorized)
+    at _0x495cac.<anonymous> (C:\snapshot\browserstack-binary\cli\dist\index.js)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-17T13:11:32.467Z CLI error  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  error invoking callback for eventName: {"name":"HTTPError","code":"ERR_NON_2XX_3XX_RESPONSE","timings":{"start":1768655491536,"socket":1768655491537,"lookup":1768655491631,"connect":1768655491904,"secureConnect":1768655492192,"upload":1768655492194,"response":1768655492462,"end":1768655492463,"phases":{"wait":1,"dns":94,"tcp":273,"tls":288,"request":2,"firstByte":268,"download":1,"total":927}}}
+2026-01-17T13:11:32.467Z CLI error  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  HTTPError: Response code 401 (Unauthorized)
+    at _0x495cac.<anonymous> (C:\snapshot\browserstack-binary\cli\dist\index.js)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-01-17T13:11:32.468Z CLI info  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-17T13:11:33.309Z CLI info [TEST REPORTING AND ANALYTICS:module]  [aaqibshaheer_lx7fNZ]  [lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr]  [5a41411f-fc44-4e52-b83a-33dd883b8bf6]  Visit https://automation.browserstack.com/builds/lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr to view build report, insights, and many more debugging information all at one place!

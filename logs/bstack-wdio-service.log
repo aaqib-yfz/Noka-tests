@@ -1,0 +1,154 @@
+[90m2026-01-17T13:10:28.385Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service started with id: fc154d20-652e-4203-84ea-7eceb56572f5
+[90m2026-01-17T13:10:28.387Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m _options data: {"testObservability":false}
+[90m2026-01-17T13:10:28.387Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m webdriver capabilities data: [{"platformName":"Android","appium:deviceName":"Google Pixel 8","appium:platformVersion":"14.0","appium:automationName":"UiAutomator2","appium:app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","bstack:options":{"projectName":"Noka App","buildName":"Android Appium Tests","sessionName":"Smoke Test - Launch App","debug":true,"networkLogs":true}}]
+[90m2026-01-17T13:10:28.388Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m _config data: {"rootDir":"D:\\Noka tests","specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"capabilities":[],"logLevel":"info","logLevels":{},"groupLogsByTestSpec":false,"excludeDriverLogs":[],"bail":0,"waitforInterval":100,"waitforTimeout":40000,"framework":"mocha","reporters":["spec"],"services":[["browserstack",{"testObservability":false}]],"maxInstances":1,"maxInstancesPerCapability":100,"injectGlobals":true,"filesToWatch":[],"connectionRetryTimeout":120000,"connectionRetryCount":3,"execArgv":[],"runnerEnv":{"FORCE_COLOR":"1"},"runner":"local","shard":{"current":1,"total":1},"specFileRetries":0,"specFileRetriesDelay":0,"specFileRetriesDeferred":false,"autoAssertOnTestEnd":true,"reporterSyncInterval":100,"reporterSyncTimeout":5000,"cucumberFeaturesWithLineNumbers":[],"mochaOpts":{"timeout":300000,"ui":"bdd"},"jasmineOpts":{"defaultTimeoutInterval":10000},"cucumberOpts":{"timeout":10000},"onPrepare":[],"onWorkerStart":[],"onWorkerEnd":[],"before":[],"beforeSession":[],"beforeSuite":[],"beforeHook":[],"beforeTest":[],"beforeCommand":[null],"afterCommand":[],"afterTest":[],"afterHook":[],"afterSuite":[],"afterSession":[null],"after":[],"onComplete":[],"onReload":[],"beforeAssertion":[],"afterAssertion":[],"beforeFeature":[],"beforeScenario":[],"beforeStep":[],"afterStep":[],"afterScenario":[],"afterFeature":[],"_":["run","run"],"$0":"node_modules\\@wdio\\cli\\bin\\wdio.js","config-path":"wdio.bs.conf.js","user":"[REDACTED]","key":"[REDACTED]"}
+[90m2026-01-17T13:10:28.395Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestAttempted',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: 'fc154d20-652e-4203-84ea-7eceb56572f5',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.22.0',
+    language: 'WebdriverIO',
+    languageVersion: 'v22.14.0',
+    buildName: 'Android Appium Tests',
+    buildIdentifier: 'undefined',
+    os: 'Windows_NT',
+    hostname: 'Aaqib',
+    productMap: {
+      observability: false,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'automate' ],
+    framework: 'mocha'
+  }
+}
+[90m2026-01-17T13:10:29.339Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel Event Response: "{\"message\":\"SDK Event recorded successfully\"}"
+[90m2026-01-17T13:10:29.339Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel event success
+[90m2026-01-17T13:10:29.342Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m startMain: Starting main process
+[90m2026-01-17T13:10:29.343Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configuring Cli path.
+[90m2026-01-17T13:10:29.343Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m File C:\Users\Qazi\.browserstack already exist
+[90m2026-01-17T13:10:29.345Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Current CLI Path Found: C:\Users\Qazi\.browserstack\cli\binary-win-x64.exe
+[90m2026-01-17T13:10:30.840Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m response {"success":true}
+[90m2026-01-17T13:10:30.841Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Resolved binary path: C:\Users\Qazi\.browserstack\cli\binary-win-x64.exe
+[90m2026-01-17T13:10:30.841Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m spawning command='C:\Users\Qazi\.browserstack\cli\binary-win-x64.exe,sdk'
+[90m2026-01-17T13:10:31.798Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m CLI params loaded: {"id":"5a41411f-fc44-4e52-b83a-33dd883b8bf6","listen":"127.0.0.1:5400","port":"5400"}
+[90m2026-01-17T13:10:31.830Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Connected to gRPC server at 127.0.0.1:5400
+[90m2026-01-17T13:10:31.831Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Initialized gRPC client with bin session id: 5a41411f-fc44-4e52-b83a-33dd883b8bf6 and listen address: 127.0.0.1:5400
+[90m2026-01-17T13:10:31.832Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m startMain: main-process started
+[90m2026-01-17T13:10:31.832Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m startBinSession: Calling startBinSession
+[90m2026-01-17T13:10:35.212Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m StartBinSession successful
+[90m2026-01-17T13:10:35.218Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Is CLI running true
+[90m2026-01-17T13:10:35.213Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m start: startBinSession response={"binSessionId":"5a41411f-fc44-4e52-b83a-33dd883b8bf6","config":"{\"userName\":\"aaqibshaheer_lx7fNZ\",\"accessKey\":\"a4RWhSZ4xcwXCpsuqR1N\",\"platforms\":[{\"platformName\":\"Android\",\"appium:deviceName\":\"Google Pixel 8\",\"appium:platformVersion\":\"14.0\",\"appium:automationName\":\"UiAutomator2\",\"appium:app\":\"bs://7859e32f122f8995208d85636e4188dfb5d07605\",\"projectName\":\"Noka App\",\"buildName\":\"Android Appium Tests\",\"sessionName\":\"Smoke Test - Launch App\",\"debug\":true,\"networkLogs\":true,\"wdioService\":\"9.22.0\"}],\"isNonBstackA11yWDIO\":false,\"testObservability\":false,\"accessibility\":false,\"testContextOptions\":{\"skipSessionName\":false,\"skipSessionStatus\":false,\"sessionNameOmitTestTitle\":false,\"sessionNamePrependTopLevelSuiteTitle\":false,\"sessionNameFormat\":\"\"},\"buildTag\":[],\"browserstackLocal\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"additionalPlatforms\":[],\"additionalParams\":{},\"buildName\":\"Android Appium Tests\",\"projectName\":\"Noka App\",\"app\":\"bs://7859e32f122f8995208d85636e4188dfb5d07605\",\"buildIdentifier\":\"#8\",\"browserStackLocalOptions\":{\"key\":\"a4RWhSZ4xcwXCpsuqR1N\",\"skipBinaryInitialisation\":false},\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub.browserstack.com/wd/hub\"}","testhub":{"jwt":"eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzY4NjY2MjMwIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjEwNTIyMTYxLCJzY29wZSI6eyJwcm9kdWN0Ijoic2RrIiwidXNlcl9hY2Nlc3MiOnsidGVzdF9vYnNlcnZhYmlsaXR5IjoxLCJhdXRvbWF0ZSI6MSwiYXBwX2F1dG9tYXRlIjoxLCJwZXJjeSI6MSwiYXBwX3BlcmN5IjoxLCJhY2Nlc3NpYmlsaXR5X3Rlc3RpbmciOjEsImFwcF9hY2Nlc3NpYmlsaXR5X3Rlc3RpbmciOjEsImF1dG9tYXRlX3R1cmJvc2NhbGUiOjEsImxvd19jb2RlX2F1dG9tYXRpb24iOjF9LCJpYWFtX3JvbGUiOiJvd25lciJ9LCJncm91cF9pZCI6MTA0MzU3MTgsInRlYW1faWQiOm51bGwsInVkYWNfYWNjZXNzIjoiZ2xvYmFsIn0.DxYrIfNKAFFhIWP6TgFr2rArER-z3Y55BjcUQlp99Fm19r1e3IerKdaf5H5fLP73OEkrSeT0FOZf1HR0y9znvetZzdbPgXpf5OuxcuWiLZ9pPXEvRIRC1O-2BmwxBflqTjJ-vgQ430i34peDSaEVUwyzPr4dWdVcP6h9cXVQIl9lmgbm--KhujyC4T7z1JW6ZqPTKigL1kVgDxgdmlVMwIs_nXpkpQCvZADQApDaL-CjywiQUO9Xgio9oT8jaGGmAjw9JMCihWioQcnwS6i5CkZbgnbFrXqVDLsVThbkOu2wDcwnVNvP4eMxpEREeOQ37KKUC-vEsXO8XxfzICrySQ","buildHashedId":"lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr","testhubEvents":true,"errors":{}},"percy":{"success":false,"percyCaptureMode":"","percyBuildId":"","isPercyAutoEnabled":false},"sessionFramework":"run,wdio.bs.conf.js"}
+[90m2026-01-17T13:10:35.213Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m loadModules: binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6
+[90m2026-01-17T13:10:35.214Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m loadModules: config={"userName":"aaqibshaheer_lx7fNZ","accessKey":"a4RWhSZ4xcwXCpsuqR1N","platforms":[{"platformName":"Android","appium:deviceName":"Google Pixel 8","appium:platformVersion":"14.0","appium:automationName":"UiAutomator2","appium:app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","projectName":"Noka App","buildName":"Android Appium Tests","sessionName":"Smoke Test - Launch App","debug":true,"networkLogs":true,"wdioService":"9.22.0"}],"isNonBstackA11yWDIO":false,"testObservability":false,"accessibility":false,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"sessionNameOmitTestTitle":false,"sessionNamePrependTopLevelSuiteTitle":false,"sessionNameFormat":""},"buildTag":[],"browserstackLocal":false,"browserstackAutomation":true,"selfHeal":false,"disableAutoCaptureLogs":false,"testhub":true,"additionalPlatforms":[],"additionalParams":{},"buildName":"Android Appium Tests","projectName":"Noka App","app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","buildIdentifier":"#8","browserStackLocalOptions":{"key":"a4RWhSZ4xcwXCpsuqR1N","skipBinaryInitialisation":false},"testOrchestrationOptions":{"retryTestsOnFailure":{},"abortBuildOnFailure":{}},"apis":{"automate":{"hub":"https://hub.browserstack.com","cdp":"https://cdp.browserstack.com","api":"https://api.browserstack.com","upload":"https://api-cloud.browserstack.com"},"appAutomate":{"hub":"https://hub.browserstack.com","api":"https://api.browserstack.com","upload":"https://api-cloud.browserstack.com"},"percy":{"api":"https://api.browserstack.com"},"turboScale":{"api":"https://grid.browserstack.com"},"accessibility":{"api":"https://accessibility.browserstack.com"},"appAccessibility":{"api":"https://app-accessibility.browserstack.com"},"observability":{"api":"https://collector-observability.browserstack.com","upload":"https://upload-observability.browserstack.com"},"configServer":{"api":"https://sdk.browserstack.com"},"edsInstrumentation":{"api":"https://eds.browserstack.com"},"tcg":{"api":"https://tcg.browserstack.com"}},"hubUrl":"https://hub.browserstack.com/wd/hub"}
+[90m2026-01-17T13:10:35.215Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m AutomateModule: Initializing Automate Module
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring modules
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=WebdriverIOModule platformIndex=0
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module WebdriverIOModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=AutomateModule platformIndex=0
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module AutomateModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:35.218Z[39m [33mWARN[39m [97m@wdio/browserstack-service[39m Accessibility Automation will run only on Chrome browsers.
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=TestHubModule platformIndex=0
+[90m2026-01-17T13:10:35.217Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module TestHubModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:41.603Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Starting as child process with session ID: 5a41411f-fc44-4e52-b83a-33dd883b8bf6
+[90m2026-01-17T13:10:41.639Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Connected to gRPC server at 127.0.0.1:5400
+[90m2026-01-17T13:10:41.640Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Connecting bin session
+[90m2026-01-17T13:10:41.708Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m ConnectBinSession successful
+[90m2026-01-17T13:10:41.711Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Connected to bin session: {"binSessionId":"5a41411f-fc44-4e52-b83a-33dd883b8bf6","config":"{\"userName\":\"aaqibshaheer_lx7fNZ\",\"accessKey\":\"a4RWhSZ4xcwXCpsuqR1N\",\"platforms\":[{\"platformName\":\"Android\",\"appium:deviceName\":\"Google Pixel 8\",\"appium:platformVersion\":\"14.0\",\"appium:automationName\":\"UiAutomator2\",\"appium:app\":\"bs://7859e32f122f8995208d85636e4188dfb5d07605\",\"projectName\":\"Noka App\",\"buildName\":\"Android Appium Tests\",\"sessionName\":\"Smoke Test - Launch App\",\"debug\":true,\"networkLogs\":true,\"wdioService\":\"9.22.0\"}],\"isNonBstackA11yWDIO\":false,\"testObservability\":false,\"accessibility\":false,\"testContextOptions\":{\"skipSessionName\":false,\"skipSessionStatus\":false,\"sessionNameOmitTestTitle\":false,\"sessionNamePrependTopLevelSuiteTitle\":false,\"sessionNameFormat\":\"\"},\"buildTag\":[],\"browserstackLocal\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"additionalPlatforms\":[],\"additionalParams\":{},\"buildName\":\"Android Appium Tests\",\"projectName\":\"Noka App\",\"app\":\"bs://7859e32f122f8995208d85636e4188dfb5d07605\",\"buildIdentifier\":\"#8\",\"browserStackLocalOptions\":{\"key\":\"a4RWhSZ4xcwXCpsuqR1N\",\"skipBinaryInitialisation\":false},\"testOrchestrationOptions\":{\"retryTestsOnFailure\":{},\"abortBuildOnFailure\":{}},\"apis\":{\"automate\":{\"hub\":\"https://hub.browserstack.com\",\"cdp\":\"https://cdp.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"appAutomate\":{\"hub\":\"https://hub.browserstack.com\",\"api\":\"https://api.browserstack.com\",\"upload\":\"https://api-cloud.browserstack.com\"},\"percy\":{\"api\":\"https://api.browserstack.com\"},\"turboScale\":{\"api\":\"https://grid.browserstack.com\"},\"accessibility\":{\"api\":\"https://accessibility.browserstack.com\"},\"appAccessibility\":{\"api\":\"https://app-accessibility.browserstack.com\"},\"observability\":{\"api\":\"https://collector-observability.browserstack.com\",\"upload\":\"https://upload-observability.browserstack.com\"},\"configServer\":{\"api\":\"https://sdk.browserstack.com\"},\"edsInstrumentation\":{\"api\":\"https://eds.browserstack.com\"},\"tcg\":{\"api\":\"https://tcg.browserstack.com\"}},\"hubUrl\":\"https://hub-use.browserstack.com/wd/hub\"}","testhub":{"jwt":"eyJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNzY4NjY2MjMwIiwiaXNzIjoid3d3LmJyb3dzZXJzdGFjay5jb20iLCJzdWIiOjEwNTIyMTYxLCJzY29wZSI6eyJwcm9kdWN0Ijoic2RrIiwidXNlcl9hY2Nlc3MiOnsidGVzdF9vYnNlcnZhYmlsaXR5IjoxLCJhdXRvbWF0ZSI6MSwiYXBwX2F1dG9tYXRlIjoxLCJwZXJjeSI6MSwiYXBwX3BlcmN5IjoxLCJhY2Nlc3NpYmlsaXR5X3Rlc3RpbmciOjEsImFwcF9hY2Nlc3NpYmlsaXR5X3Rlc3RpbmciOjEsImF1dG9tYXRlX3R1cmJvc2NhbGUiOjEsImxvd19jb2RlX2F1dG9tYXRpb24iOjF9LCJpYWFtX3JvbGUiOiJvd25lciJ9LCJncm91cF9pZCI6MTA0MzU3MTgsInRlYW1faWQiOm51bGwsInVkYWNfYWNjZXNzIjoiZ2xvYmFsIn0.DxYrIfNKAFFhIWP6TgFr2rArER-z3Y55BjcUQlp99Fm19r1e3IerKdaf5H5fLP73OEkrSeT0FOZf1HR0y9znvetZzdbPgXpf5OuxcuWiLZ9pPXEvRIRC1O-2BmwxBflqTjJ-vgQ430i34peDSaEVUwyzPr4dWdVcP6h9cXVQIl9lmgbm--KhujyC4T7z1JW6ZqPTKigL1kVgDxgdmlVMwIs_nXpkpQCvZADQApDaL-CjywiQUO9Xgio9oT8jaGGmAjw9JMCihWioQcnwS6i5CkZbgnbFrXqVDLsVThbkOu2wDcwnVNvP4eMxpEREeOQ37KKUC-vEsXO8XxfzICrySQ","buildHashedId":"lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr","testhubEvents":true,"errors":{}},"percy":{"success":false,"percyCaptureMode":"","percyBuildId":"","isPercyAutoEnabled":false},"sessionFramework":"selenium","testOrchestration":{"retryTestsOnFailure":{"enabled":false,"maxRetries":0},"abortBuildOnFailure":{"enabled":false,"maxFailures":0}}}
+[90m2026-01-17T13:10:41.712Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m loadModules: binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6
+[90m2026-01-17T13:10:41.712Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m loadModules: config={"userName":"aaqibshaheer_lx7fNZ","accessKey":"a4RWhSZ4xcwXCpsuqR1N","platforms":[{"platformName":"Android","appium:deviceName":"Google Pixel 8","appium:platformVersion":"14.0","appium:automationName":"UiAutomator2","appium:app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","projectName":"Noka App","buildName":"Android Appium Tests","sessionName":"Smoke Test - Launch App","debug":true,"networkLogs":true,"wdioService":"9.22.0"}],"isNonBstackA11yWDIO":false,"testObservability":false,"accessibility":false,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"sessionNameOmitTestTitle":false,"sessionNamePrependTopLevelSuiteTitle":false,"sessionNameFormat":""},"buildTag":[],"browserstackLocal":false,"browserstackAutomation":true,"selfHeal":false,"disableAutoCaptureLogs":false,"testhub":true,"additionalPlatforms":[],"additionalParams":{},"buildName":"Android Appium Tests","projectName":"Noka App","app":"bs://7859e32f122f8995208d85636e4188dfb5d07605","buildIdentifier":"#8","browserStackLocalOptions":{"key":"a4RWhSZ4xcwXCpsuqR1N","skipBinaryInitialisation":false},"testOrchestrationOptions":{"retryTestsOnFailure":{},"abortBuildOnFailure":{}},"apis":{"automate":{"hub":"https://hub.browserstack.com","cdp":"https://cdp.browserstack.com","api":"https://api.browserstack.com","upload":"https://api-cloud.browserstack.com"},"appAutomate":{"hub":"https://hub.browserstack.com","api":"https://api.browserstack.com","upload":"https://api-cloud.browserstack.com"},"percy":{"api":"https://api.browserstack.com"},"turboScale":{"api":"https://grid.browserstack.com"},"accessibility":{"api":"https://accessibility.browserstack.com"},"appAccessibility":{"api":"https://app-accessibility.browserstack.com"},"observability":{"api":"https://collector-observability.browserstack.com","upload":"https://upload-observability.browserstack.com"},"configServer":{"api":"https://sdk.browserstack.com"},"edsInstrumentation":{"api":"https://eds.browserstack.com"},"tcg":{"api":"https://tcg.browserstack.com"}},"hubUrl":"https://hub-use.browserstack.com/wd/hub"}
+[90m2026-01-17T13:10:41.714Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m AutomateModule: Initializing Automate Module
+[90m2026-01-17T13:10:41.715Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring modules
+[90m2026-01-17T13:10:41.715Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=WebdriverIOModule platformIndex=0
+[90m2026-01-17T13:10:41.715Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module WebdriverIOModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:41.716Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=AutomateModule platformIndex=0
+[90m2026-01-17T13:10:41.716Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module AutomateModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:41.716Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m configureModules: Configuring module=TestHubModule platformIndex=0
+[90m2026-01-17T13:10:41.716Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module TestHubModule with binSessionId=5a41411f-fc44-4e52-b83a-33dd883b8bf6, platformIndex=0
+[90m2026-01-17T13:10:41.717Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackEvent: automationFrameworkState=AutomationFrameworkState.CREATE hookState=HookState.PRE
+[90m2026-01-17T13:10:41.717Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackEvent: automationFrameworkState=AutomationFrameworkState.CREATE hookState=HookState.PRE args=[object Object]
+[90m2026-01-17T13:10:41.718Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m resolveInstance: resolving instance for automationFrameworkState=AutomationFrameworkState.CREATE hookState=HookState.PRE
+[90m2026-01-17T13:10:41.719Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m getTrackedInstance: 5888:0
+[90m2026-01-17T13:10:41.720Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackWebdriverIOInstance: created instance for target=5888:0, state=AutomationFrameworkState.CREATE, args=[object Object]
+[90m2026-01-17T13:10:41.721Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m setTrackedInstance: 7a344121cd13c9115f3007a0a43159c8581f9edeb4235f75ac629f5ca8bee4ec
+[90m2026-01-17T13:10:41.721Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackWebdriverIOInstance: saved instance contextId=7a344121cd13c9115f3007a0a43159c8581f9edeb4235f75ac629f5ca8bee4ec target=5888:0
+[90m2026-01-17T13:10:41.721Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m getTrackedInstance: 5888:0
+[90m2026-01-17T13:10:41.721Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m runHooks: automationFrameworkState=AutomationFrameworkState.CREATE hookState=HookState.PRE
+[90m2026-01-17T13:10:41.722Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m onBeforeDriverCreate: driver is about to be created
+[90m2026-01-17T13:10:41.723Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Sending driverInitEvent
+[90m2026-01-17T13:10:41.742Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m driverInitEvent successful
+[90m2026-01-17T13:10:41.742Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m getBinDriverCapabilities: got hub url https://hub-use.browserstack.com/wd/hub
+[90m2026-01-17T13:10:41.742Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m getTrackedInstance: 5888:0
+[90m2026-01-17T13:11:06.697Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m CLI is running, tracking accessibility event for before: 307c42a197f406778a84b324589b606a783e23a5
+[90m2026-01-17T13:11:06.698Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Requesting Browserstack session URL at https://api-cloud.browserstack.com/app-automate/sessions/307c42a197f406778a84b324589b606a783e23a5.json
+[90m2026-01-17T13:11:07.657Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m  session: https://app-automate.browserstack.com/builds/cd607359cc48c35465de29057f6953799ba70135/sessions/307c42a197f406778a84b324589b606a783e23a5
+[90m2026-01-17T13:11:27.687Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackEvent: automationFrameworkState=AutomationFrameworkState.EXECUTE hookState=HookState.POST
+[90m2026-01-17T13:11:27.693Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2026-01-17T13:11:27.687Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m trackEvent: automationFrameworkState=AutomationFrameworkState.EXECUTE hookState=HookState.POST args=[object Object]
+[90m2026-01-17T13:11:27.687Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m resolveInstance: resolving instance for automationFrameworkState=AutomationFrameworkState.EXECUTE hookState=HookState.POST
+[90m2026-01-17T13:11:27.687Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m getTrackedInstance: 5888:0
+[90m2026-01-17T13:11:27.688Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m runHooks: automationFrameworkState=AutomationFrameworkState.EXECUTE hookState=HookState.POST
+[90m2026-01-17T13:11:27.689Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m onAfterExecute: inside automate module after execute hook!
+[90m2026-01-17T13:11:27.693Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2026-01-17T13:11:31.502Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Inside OnComplete hook..
+[90m2026-01-17T13:11:31.503Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m stop: CLI stop triggered
+[90m2026-01-17T13:11:31.502Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending stop launch event
+[90m2026-01-17T13:11:31.505Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Stopping bin session
+[90m2026-01-17T13:11:33.319Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m StopBinSession successful
+[90m2026-01-17T13:11:33.320Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m stop: stopBinSession response={"success":true,"automateBuildlink":"https://app-automate.browserstack.com/dashboard/v2/builds/cd607359cc48c35465de29057f6953799ba70135","hashedId":"cd607359cc48c35465de29057f6953799ba70135"}
+[90m2026-01-17T13:11:33.320Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Unconfiguring modules
+[90m2026-01-17T13:11:33.321Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module WebdriverIOModule with binSessionId=null, platformIndex=0
+[90m2026-01-17T13:11:33.321Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module AutomateModule with binSessionId=null, platformIndex=0
+[90m2026-01-17T13:11:33.321Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Configured module TestHubModule with binSessionId=null, platformIndex=0
+[90m2026-01-17T13:11:33.321Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m stop: shutting down CLI
+[90m2026-01-17T13:11:33.382Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m stop: CLI process exited
+[90m2026-01-17T13:11:35.389Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service run ended for id: fc154d20-652e-4203-84ea-7eceb56572f5 testhub id: lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr
+[90m2026-01-17T13:11:35.391Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-5888.json
+[90m2026-01-17T13:11:35.396Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: 'fc154d20-652e-4203-84ea-7eceb56572f5',
+    testhub_uuid: 'lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr',
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.22.0',
+    language: 'WebdriverIO',
+    languageVersion: 'v22.14.0',
+    buildName: 'Android Appium Tests',
+    buildIdentifier: 'undefined',
+    os: 'Windows_NT',
+    hostname: 'Aaqib',
+    productMap: {
+      observability: false,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: false,
+        manuallySet: true,
+        buildHashedId: 'lp99wbwhckbco4ao59wbwtaw4kxj1hszsnwrewxr'
+      }
+    }
+  }
+}
+[90m2026-01-17T13:11:36.086Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel Event Response: "{\"message\":\"SDK Event recorded successfully\"}"
+[90m2026-01-17T13:11:36.086Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel event success
+[90m2026-01-17T13:11:38.128Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Upload response: {
+  "status": "success",
+  "message": "Logs upload successful in file - logs.tar.gz"
+}
+2026-01-17T13:11:42.011Z DEBUG @wdio/browserstack-service Successfully uploaded performance events Bravo
