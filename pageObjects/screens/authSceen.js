@@ -5,7 +5,8 @@ const navigationBar = new NavigationBar();
 const welcomePage = new WelcomePage();
 export class AuthScreen {
   async signUp(name, email, password) {
-    await welcomePage.signUpbtn.click();
+    await welcomePage.WelcomeButton.click();
+    // await welcomePage.signUpbtn.click();
     await browser.pause(1000); // Pause for 1 second
 
     await welcomePage.fullNameField.addValue(name);
@@ -24,9 +25,11 @@ export class AuthScreen {
     await welcomePage.LoginEmail.addValue(email);
     await welcomePage.LoginPassword.addValue(password);
     await welcomePage.signIntBtn.click();
+    await browser.pause(1000);
   }
 
   async signout() {
+    await browser.pause(1000);
     await navigationBar.visitSettings();
     await welcomePage.signOutbtn.click();
   }

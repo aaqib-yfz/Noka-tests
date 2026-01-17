@@ -1,5 +1,10 @@
 # Ignore node modules
-node_modules/
+# node_modules/
 
 # Ignore APK file
 noka.apk
+
+.env
+
+.browserstackignore
+node_modules

@@ -1,4 +1,9 @@
 class WelcomePage {
+  //welcome selector
+  get WelcomeButton() {
+    return $('android=new UiSelector().resourceId("button")');
+  }
+
   // signup screen selectors
   get signUpbtn() {
     return $('android=new UiSelector().text("Sign Up")');
@@ -51,7 +56,7 @@ class WelcomePage {
   }
 
   get signOutbtn() {
-    return $('android=new UiSelector().text("Sign Out")');
+    return $('android=new UiSelector().resourceId("tabs-profile-text-6")');
   }
 }
 

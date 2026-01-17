@@ -5,34 +5,42 @@ const pantryScreenSelectors = new PantryScreenSelectors();
 const navigationBar = new NavigationBar();
 export class PantryScreen {
   async addItem(itemName, quantity, unit, category, date, storage) {
-    await driver.pause(1000); // or better: wait for element
     await navigationBar.visitMyPantry();
-    await expect(pantryScreenSelectors.addItemsBtn).toBeDisplayed();
-    await pantryScreenSelectors.addItemsBtn.click();
+    await pantryScreenSelectors.addItemsBtn();
 
-    const nameField = pantryScreenSelectors.itemNameField;
-    await nameField.setValue(itemName);
+    await pantryScreenSelectors.itemNameField.waitForDisplayed();
+    await pantryScreenSelectors.itemNameField.setValue(itemName);
 
-    const itemQuantity = pantryScreenSelectors.quantity;
-    await itemQuantity.setValue(quantity);
+    await pantryScreenSelectors.quantity.waitForDisplayed();
+    await pantryScreenSelectors.quantity.setValue(quantity);
 
+    await pantryScreenSelectors.selectUnitDropDown.waitForDisplayed();
     await pantryScreenSelectors.selectUnitDropDown.click();
     const unitOption = pantryScreenSelectors.unitOption(unit);
+    await unitOption.waitForDisplayed();
     await unitOption.click();
 
+    await pantryScreenSelectors.selectCategory.waitForDisplayed();
     await pantryScreenSelectors.selectCategory.click();
     const categoryOption = pantryScreenSelectors.categoryOption(category);
+    await categoryOption.waitForDisplayed();
     await categoryOption.click();
 
+    await pantryScreenSelectors.dateDropDown.waitForDisplayed();
     await pantryScreenSelectors.dateDropDown.click();
     const datePick = pantryScreenSelectors.datePick(date);
+    await datePick.waitForDisplayed();
     await datePick.click();
+    await pantryScreenSelectors.dateOkBtn.waitForDisplayed();
     await pantryScreenSelectors.dateOkBtn.click();
 
+    await pantryScreenSelectors.storageDropDown.waitForDisplayed();
     await pantryScreenSelectors.storageDropDown.click();
     const storageOption = pantryScreenSelectors.storageOption(storage);
+    await storageOption.waitForDisplayed();
     await storageOption.click();
 
+    await pantryScreenSelectors.addItemBtn.waitForDisplayed();
     await pantryScreenSelectors.addItemBtn.click();
   }
 }

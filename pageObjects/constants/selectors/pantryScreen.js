@@ -1,6 +1,9 @@
+import { Helper } from "../../helper";
+
+const helper = new Helper();
 class PantryScreenSelectors {
-  get addItemsBtn() {
-    return $('android=new UiSelector().text("Add Item")');
+  async addItemsBtn() {
+    await helper.tapAt(926, 2013);
   }
 
   get itemNameField() {
@@ -30,6 +33,7 @@ class PantryScreenSelectors {
       'android=new UiSelector().text("Select Date Bought (YYYY-MM-DD)")'
     );
   }
+
   datePick(text) {
     return $(`android=new UiSelector().text("${text}")`);
   }

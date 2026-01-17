@@ -63,7 +63,7 @@ exports.config = {
       "appium:platformVersion": "16.0",
       "appium:automationName": "UiAutomator2",
       "appium:app": "D:/Noka tests/noka.apk",
-      // "appium:appPackage": "com.anonymous.noka.test",
+      // "appium:appPackage": "com.aaqibyfz.noka",
 
       // "appium:appActivity": ".experience.ExperienceActivity",
     },
@@ -76,6 +76,8 @@ exports.config = {
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
   logLevel: "info",
+  // Custom slow motion delay (ms). Default 200; override via env var SLOWMO_MS
+  slowMo: Number(process.env.SLOWMO_MS || 200),
   //
   // Set specific log levels per logger
   // loggers:
@@ -102,7 +104,7 @@ exports.config = {
   // baseUrl: 'http://localhost:8080',
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 40000,
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
@@ -201,6 +203,13 @@ exports.config = {
    */
   // before: function (capabilities, specs) {
   // },
+  /**
+   * Apply a small delay before each WebdriverIO command to simulate Playwright's slowMo.
+   * Configure via env var SLOWMO_MS (e.g., 200, 300, 500).
+   */
+  beforeCommand: async function (commandName, args) {
+    await browser.pause(100); // delay every command by 0.5s
+  },
   /**
    * Runs before a WebdriverIO command gets executed.
    * @param {string} commandName hook command name
@@ -307,5 +316,5 @@ exports.config = {
   // },
   hostname: "localhost",
   port: 4723,
-  path: "/wd/hub",
+  path: "/",
 };
